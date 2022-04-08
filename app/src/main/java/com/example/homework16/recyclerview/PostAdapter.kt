@@ -31,7 +31,7 @@ class PostAdapter : RecyclerView.Adapter<PostAdapter.PostViewHolder>() {
         return postList.size
     }
 
-    class PostViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+    class PostViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun bind(postTitle: String, postDescription: String, postImageResource: Int) {
             with(itemView) {
