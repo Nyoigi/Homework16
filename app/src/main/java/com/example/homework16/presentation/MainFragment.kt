@@ -57,4 +57,10 @@ class MainFragment : Fragment() {
         binding?.rvPost?.layoutManager = LinearLayoutManager(requireContext())
         binding?.rvPost?.adapter = adapter
     }
+
+    override fun onDestroyView() {
+        binding = null
+
+        super.onDestroyView()
+    }
 }
